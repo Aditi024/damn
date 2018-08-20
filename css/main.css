@@ -1,0 +1,94 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+ /* @media (min-width: 450px) {
+   .content {
+     display: grid;
+     grid-gap: 50px;
+     grid-template-columns: 1fr 1fr;
+     max-width: 600px;
+     margin: 0 auto;
+   }
+ } */
+
+ /* @media (min-width : 350px) {
+   .wrapper {
+     display: grid;
+     grid-template-columns: 1fr;
+     margin: 0 auto;
+   }
+ } */
+
+
+
+ .color-test {
+   width: 250px;
+   height: 250px;
+   border-radius: 80%;
+   background-image: linear-gradient(4deg, red, hotpink, white, blue);
+   /* background-image: linear-gradient(9deg, #00C9C8, #BFFCF9, #CBCCFF, #00AAA9); */
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate3d(-50%, -50%, 0);
+   -webkit-filter: blur(110px);
+   transition: filter .1s ease, width .1s ease, height .1s ease;
+   background-color: #FFF9F9;
+ }
+
+ .not-blurred {
+   width: 2px;
+   height: 2px;
+   -webkit-filter: blur(0);
+   background: #BFFCF9;
+ }
+
+ .wrapper {
+   display: grid;
+   grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+   grid-gap: 40px;
+   padding-top: 100px;
+   font-family: 'Karla', sans-serif;
+   /* background-color: #FFF9F9; */
+ }
+
+ .content {
+   grid-column: 2/2;
+   font-family: 'Karla', sans-serif;
+
+ }
+
+.photo {
+  grid-column: 3/4;
+}
+
+a:link {
+  color: lightpink;
+}
+
+a:visited {
+  color: #899fde;
+}
+
+a.active {
+  color: lightgrey;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9fcff;
+  color: lightpink;
+  text-align:center;
+  font-family: 'Karla', sans-serif;
+}
+
+.Link-name:hover {
+  text-decoration: underline;
+}
+
+.section-title:hover {
+  text-decoration: underline;
+}
