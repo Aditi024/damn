@@ -1,23 +1,99 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
- /* @media (min-width: 450px) {
-   .content {
-     display: grid;
-     grid-gap: 50px;
-     grid-template-columns: 1fr 1fr;
-     max-width: 600px;
-     margin: 0 auto;
-   }
- } */
-
- /* @media (min-width : 350px) {
+ @media (min-width: 650px) {
    .wrapper {
      display: grid;
      grid-template-columns: 1fr;
      margin: 0 auto;
-   }
- } */
+    }
+ }
+
+
+
+ .wrapper {
+   display: grid;
+   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+   grid-gap: 40px;
+   padding-top: 100px;
+   font-family: 'Karla', sans-serif;
+   background-color: #FFF9F9;
+ }
+
+
+
+ .content {
+   grid-column: 2/4;
+ }
+
+
+
+
+a:link {
+  color: lightpink;
+}
+
+a:visited {
+  color: #899fde;
+}
+
+a.active {
+  color: lightgrey;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9fcff;
+  color: lightpink;
+  text-align:center;
+  font-family: 'Karla', sans-serif;
+}
+
+.Link-name:hover {
+  text-decoration: underline;
+}
+
+.section-title:hover {
+  text-decoration: underline;
+}
+
+.image {
+  grid-column: 3/4;
+}
+
+.container-intro {
+   font-family: 'Karla', sans-serif;
+   display: grid;
+   grid-template-columns: 0.5fr  2fr 2fr  0.5fr;
+   grid-gap: 20px;
+}
+
+.intro-card {
+  grid-column: 2/3;
+}
+
+.headline {
+  text-decoration: underline;
+}
+
+.project-banner-image {
+  grid-column: 3/4;
+}
+
+.body-intro {
+   font-family: 'Karla', sans-serif;
+   display: grid;
+}
+
+.long-body-copy {
+  grid-column: 2/4;
+}
+
+
+
+
 
 
 
@@ -42,53 +118,3 @@
    -webkit-filter: blur(0);
    background: #BFFCF9;
  }
-
- .wrapper {
-   display: grid;
-   grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
-   grid-gap: 40px;
-   padding-top: 100px;
-   font-family: 'Karla', sans-serif;
-   /* background-color: #FFF9F9; */
- }
-
- .content {
-   grid-column: 2/2;
-   font-family: 'Karla', sans-serif;
-
- }
-
-.photo {
-  grid-column: 3/4;
-}
-
-a:link {
-  color: lightpink;
-}
-
-a:visited {
-  color: #899fde;
-}
-
-a.active {
-  color: lightgrey;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #f9fcff;
-  color: lightpink;
-  text-align:center;
-  font-family: 'Karla', sans-serif;
-}
-
-.Link-name:hover {
-  text-decoration: underline;
-}
-
-.section-title:hover {
-  text-decoration: underline;
-}
