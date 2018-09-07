@@ -1,31 +1,51 @@
 /* ========================================
  * CSS written here will override Tachyons
  * ======================================== */
- @media (min-width: 650px) {
+
+
+.body {
+  background-color: #FFF9F9;
+}
+ .wrapper {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 20px;
+   place-items: center;
+   padding-top: 50px;
+   font-family: 'Karla', sans-serif;
+   background-color: #FFF9F9;
+
+ }
+
+ .wrapper_with_photo {
+   padding-top: 50px;
+   font-family: 'Karla', sans-serif;
+   background-color: #FFF9F9;
+   /* grid-column: 3/3; */
+
+ }
+
+
+
+ @media (max-width: 650px) {
    .wrapper {
-     display: grid;
+     display: block;
      grid-template-columns: 1fr;
      margin: 0 auto;
     }
+    .photo {
+      max-width: 1fr;
+    }
  }
 
+/* change selected text color */
+::-moz-selection { background: #FFE0EB; }
+::selection {background: #FFE0EB;}
 
-
- .wrapper {
-   display: grid;
-   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-   grid-gap: 40px;
-   padding-top: 100px;
-   font-family: 'Karla', sans-serif;
-   background-color: #FFF9F9;
+ .content1 {
+   position: relative;
+   z-index: 10
  }
-
-
-
- .content {
-   grid-column: 2/4;
- }
-
 
 
 
@@ -49,6 +69,7 @@ a.active {
   color: lightpink;
   text-align:center;
   font-family: 'Karla', sans-serif;
+
 }
 
 .Link-name:hover {
@@ -59,9 +80,7 @@ a.active {
   text-decoration: underline;
 }
 
-.image {
-  grid-column: 3/4;
-}
+
 
 .container-intro {
    font-family: 'Karla', sans-serif;
@@ -87,15 +106,17 @@ a.active {
    display: grid;
 }
 
-.long-body-copy {
+/* .long-body-copy {
   grid-column: 2/4;
+} */
+
+
+
+.photo {
+  grid-column: 3/4;
+  align-self: start;
+  background-color: yellow;
 }
-
-
-
-
-
-
 
  .color-test {
    width: 250px;
@@ -104,6 +125,7 @@ a.active {
    background-image: linear-gradient(4deg, red, hotpink, white, blue);
    /* background-image: linear-gradient(9deg, #00C9C8, #BFFCF9, #CBCCFF, #00AAA9); */
    position: absolute;
+   z-index: 1;
    left: 50%;
    top: 50%;
    transform: translate3d(-50%, -50%, 0);
