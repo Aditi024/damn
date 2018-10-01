@@ -2,6 +2,7 @@
  * CSS written here will override Tachyons
  * ======================================== */
 
+html{background-color: #FFF9F9;}
 
 .body {
   background-color: #FFF9F9;
@@ -21,7 +22,6 @@
    padding-top: 50px;
    font-family: 'Karla', sans-serif;
    background-color: #FFF9F9;
-   /* grid-column: 3/3; */
 
  }
 
@@ -39,8 +39,8 @@
  }
 
 /* change selected text color */
-::-moz-selection { background: #FFE0EB; }
-::selection {background: #FFE0EB;}
+::-moz-selection { background: #fff176; }
+::selection {background: #fff176;}
 
  .content1 {
    position: relative;
@@ -50,7 +50,7 @@
 
 
 a:link {
-  color: lightpink;
+  color: #899fde;
 }
 
 a:visited {
@@ -73,7 +73,7 @@ a.active {
 }
 
 .Link-name:hover {
-  text-decoration: underline;
+  color: lightpink;
 }
 
 .section-title:hover {
@@ -106,16 +106,11 @@ a.active {
    display: grid;
 }
 
-/* .long-body-copy {
-  grid-column: 2/4;
-} */
-
 
 
 .photo {
   grid-column: 3/4;
   align-self: start;
-  background-color: yellow;
 }
 
  .color-test {
@@ -139,4 +134,22 @@ a.active {
    height: 2px;
    -webkit-filter: blur(0);
    background: #BFFCF9;
+ }
+
+
+ /* project page */
+
+ .container-intro {
+   display: grid;
+   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+ }
+
+
+
+ .intro-card {
+   grid-column: 2/3;
+ }
+
+ .long-body-copy {
+   grid-column: 2/4;
  }
